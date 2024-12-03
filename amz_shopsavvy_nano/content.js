@@ -134,8 +134,8 @@
             console.log("Session ID retrieved:", data.sessionId);
             resolve(data.sessionId);
           } else {
-            console.warn("Session ID not found. Creating new session...");
-            console.warn("Resolving with fallback session ID...");
+            console.log("Session ID not found. Creating new session...");
+            console.log("Resolving with fallback session ID...");
             resolve("Fallback Session ID"); // Resolve with a fallback session ID
             //createNanoSession()
               //.then(resolve)
