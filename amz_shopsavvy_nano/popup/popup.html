@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShopSavvy Nano</title>
+  <style>
+    body {
+      width: 350px; /* Adjust the body width to match Rufus */
+      font-family: Arial, sans-serif;
+    }
+
+    #chat-container {
+      height: 300px;
+      width: 100%; /* Set to full width of the body */
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box; /* Ensures padding is included in width */
+    }
+
+    .message {
+      margin-bottom: 10px;
+    }
+
+    .bot {
+      color: blue;
+    }
+
+    .user {
+      color: green;
+      text-align: right;
+    }
+
+    #user-input {
+      width: calc(100% - 80px); /* Adjust input field width to fit with the button */
+      padding: 5px;
+      box-sizing: border-box;
+    }
+
+    #send-button {
+      width: 60px;
+      padding: 5px;
+      margin-left: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat-container"></div>
+  <input type="text" id="user-input" placeholder="Enter Here..">
+  <button id="send-button">Send</button>
+  <br />
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "ShopSavvy Nano", 
+  "version": "1.0",
+  "description": "A Chrome extension using Gemini Nano to help you shop smarter on Amazon.",
+  "permissions": [
+    "storage", 
+    "activeTab", 
+    "scripting", 
+    "contextMenus", 
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.amazon.com/*",
+    "http://*.amazon.com/*"
+  ],
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.amazon.com/*", "https://www.amazon.com/gp/cart/view.html*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}
