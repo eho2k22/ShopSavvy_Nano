@@ -1,7 +1,7 @@
 # ShopSavvy_Nano
 a Chrome browser extension designed to enhance your shopping experience on Amazon by utilizing local Gemini Nano-powered recommendations and budget-based insights. 
 
-Here’s a draft for the GitHub README file based on the current understanding of the Nano-based Amazon Shopping Assistant extension:
+
 
 ---
 
